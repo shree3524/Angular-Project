@@ -1,0 +1,32 @@
+
+#backend:
+
+ run the following commands one by one
+root@Backend
+    1  apt install git -y
+    2  git clone https://github.com/shree3524/Angular-Project.git
+    3  ls
+    4  cd Project-Angular-App/
+    5  apt update
+    6  apt install openjdk-8-jdk -y
+    7  cd spring-backend/
+    8  ls
+   10  apt install maven -y
+   11  ls
+   12  cd src/
+   13  ls
+   14  cd main/
+   15  ls
+   16  cd resources/
+   17  ls
+   18  nano application.properties 
+   spring.datasource.url=jdbc:mysql://your-database-endpoint:3306/springbackend?useSSL=false
+spring.datasource.username=admin
+spring.datasource.password=Passwd123$
+
+spring.jpa.generate-ddl=true
+
+   22  cd ../../..
+   23  mvn clean package -Dmaven.test.skip=true
+   24  java -jar target/spring-backend-v1.jar
+   
