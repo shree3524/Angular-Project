@@ -1,0 +1,59 @@
+#fronted:
+
+
+
+
+root@Frontend
+    2  bash
+    3  apt update
+    4  apt install git -y
+    5  git clone https://github.com/shree3524/Angular-Project.git
+    6  ls
+    7  apt install unzip -y
+    8  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    9  unzip awscliv2.zip
+   10  ./aws/install
+   11  aws configure
+   12  apt install nodejs npm
+   13  node -v
+   14  npm -v
+   15  cd Project-Angular-App/
+   16  ls
+   17  cd angular-frontend/
+   18  node -v
+   19  npm -v
+   20  node -v
+   21  npm install -g @angular/cli@14.2.1
+   22  ng version
+   23  ls
+   24  cd src/
+   25  ls
+   26  cd app/
+   27  ls
+   28  cd services/
+   29  ls
+   30  nano worker.service.ts 
+
+@Injectable({
+  providedIn: 'root'
+})
+export class WorkerService {
+
+  private getUrl: string = "http://public-ip-of-frontend:8080/api/v1/workers";
+
+  constructor(private _httpClient: HttpClient) { }
+
+   31  npm install
+   32  ng build 
+   33  ng serve --host 0.0.0.0 --port=80
+   34  ls
+   35  cd Project-Angular-App/
+   36  ls
+   37  cd angular-frontend/
+   38  ls
+   39  cd dist
+   40  ls
+   41  cd angular-frontend/
+   42  ls
+
+hit public ip of Frontend instance on browser
